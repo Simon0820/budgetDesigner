@@ -42,3 +42,13 @@ body{
 .header-right{
     float: right;
 }
+
+.info-box{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    color: blueviolet;
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+}
