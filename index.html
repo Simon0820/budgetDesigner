@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<script src="java.js" defer></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html>
-    <head>
-        <title>BudgetOrganizer</title>
-    </head>
-    <body>
-        <div class="header">
-            <a href="index.html" class="budget">Budget</a>
-            <div class="header-right">
-                <a href="budgetDesigner.html" class="budgetDesigner">Design Budget</a>
-                <a href="contact.html">Contact</a>
-            </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Budget manager to keep track on your expenses">
+    <!--prevent favicon error-->
+    <link rel="shortcut icon" href="#">
+    <script src="https://unpkg.com/vue@3" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Organizer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Budget Organizer</h1>
+    </header>
+    <main id="app">
+        <div class="new-expense">
+            <form class="expense-form">
+                <label for="amount">Amount</label>
+                <input type="text" class="amount">
+                <label for="category">Category</label>
+                <select name="category" class="category">
+                    <!--fyll på listan med options-->
+                    <option value="">Example</option>                  
+                </select>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+                <button type="submit" class="add">Add Expense</button>
+            </form>
         </div>
-        <div>Homepage</div>
-    </body>
+    </main>
+    <footer>
+        <small>Written By Alex & Simon 2022</small>
+    </footer>
+</body>
+
 </html>
